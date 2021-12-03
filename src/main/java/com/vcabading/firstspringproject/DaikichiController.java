@@ -12,5 +12,8 @@ public class DaikichiController {
 		return "Welcome";
 	}
 
-	
+	@RequestMapping("/today")
+	public String daikichiToday() {
+		return "Today, you will find luck in all your endeavors!";
+	}
 }
