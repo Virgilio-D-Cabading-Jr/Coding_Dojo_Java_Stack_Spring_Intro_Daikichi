@@ -12,10 +12,4 @@ public class DaikichiApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(DaikichiApplication.class, args);
 	}
-	
-	@RequestMapping("/daikichi")
-	public String daikichi() {
-		return "Welcome";
-	}
-
 }
