@@ -1,5 +1,12 @@
 package com.vcabading.firstspringproject;
 
-public class DaikichiController {
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
 
+@RestController
+public class DaikichiController {
+	
+
+
+	
 }
