@@ -1,5 +1,6 @@
 package com.vcabading.firstspringproject;
 
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -20,5 +21,10 @@ public class DaikichiController {
 	@RequestMapping("/tomorrow")
 	public String daikichiTomorrow() {
 		return "Tomorrow, an opportunity will arise, be sure to be open to new ideas!";
+	}
+	
+	@RequestMapping("/travel/{city}")
+	public String daikichiTravelCity(@PathVariable("city") String city) {
+		return "Congratulations!  You will soon travel to " + city + "!";
 	}
 }
